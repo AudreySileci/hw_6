@@ -1,0 +1,62 @@
+---
+title: "Homework 6"
+author: "Xiaoqi Ma, Audrey Sileci, Avery Turner, & Tracy Zehner"
+format: pdf
+editor: visual
+execute:
+  echo: false
+fig-width: 6.5
+fig-height: 8
+---
+
+# Homework 6
+
+This is a group project.
+
+## Commit 1
+
+1.  Add a *data* folder to the repo. Place **star.csv** into the folder.
+
+2.  Add a folder for your scripts documents.
+
+3.  Write code in a `.qmd` document to load all the libraries that will be used in the document
+
+4.  Set global YAML options to make the code not show anywhere in the document, set figure width to 6.5 and figure height to 8, and specify a *.pdf* file as output.
+
+5.  Write the code to load the data.
+
+```{r}
+library(rio)
+library(here)
+library(tidyverse)
+
+df_star <- read_csv(here("data", "star.csv"))
+```
+
+## Commit 2
+
+1.  Add the bibliography (*.bib*) file and include at least four additional references.
+
+2.  Include in-text examples of citations formatted as **Author (Year)** and **(Author, Year)**.
+
+3.  Render the document and make sure the reference section has a Level 1 header of "**References**", and the references are displayed on their own page.
+
+```{r}
+#code chunk
+```
+
+## Commit 3
+
+Write the code to create the summary statistics shown in the table below. Output the table below and briefly describe it in text.
+
+```{r}
+#code chunk
+```
+
+## Commit 4
+
+1.  Create the following plot, using whatever theme you'd like, and briefly discuss it in text. (Note that might need to problem-solve how to put the legend at the bottom.)
+
+```{r}
+#code chunk
+```
