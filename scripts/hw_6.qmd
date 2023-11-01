@@ -11,7 +11,7 @@ fig-height: 8
 
 # Homework 6
 
-This is a group project.
+This is our group project.
 
 ## Commit 1
 
