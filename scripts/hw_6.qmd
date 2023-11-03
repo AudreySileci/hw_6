@@ -1,6 +1,8 @@
 ---
 title: "Homework 6"
 author: "Xiaoqi Ma, Audrey Sileci, Avery Turner, & Tracy Zehner"
+bibliography: references.bib
+link-citations: true
 format: pdf
 editor: visual
 execute:
@@ -41,6 +43,8 @@ df_star <- read_csv(here("data", "star.csv"))
 
 3.  Render the document and make sure the reference section has a Level 1 header of "**References**", and the references are displayed on their own page.
 
+American Indian/Alaskan Native (AI/AN) youth have higher rates of substance use than their non-AI/AN peers, though some researchers have argued that this is exclusively a divide based on socioeconomic status (SES) [@cunningham2020]. However, @carroll2020 found that AI/AN youth were more likely to recall seeing tobacco advertisements in the past 30 days than their non-AI/AN peers. Youth who identify as AI/AN also experience high rates of discrimination that likely factors into their lower SES and also their increased risk for substance use [@findling2019]. It is necessary for researchers to rebuild trust among AI/AN communities so that this disparity may be mitigated [@pacheco2013].
+
 ```{r}
 #code chunk
 ```
@@ -60,3 +64,7 @@ Write the code to create the summary statistics shown in the table below. Output
 ```{r}
 #code chunk
 ```
+
+\newpage
+
+# References
