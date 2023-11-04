@@ -53,8 +53,14 @@ American Indian/Alaskan Native (AI/AN) youth have higher rates of substance use 
 
 Write the code to create the summary statistics shown in the table below. Output the table below and briefly describe it in text.
 
+This table represents the means and standard deviations of math and reading scores by binary sex and qualification for free and reduced priced lunch (frl).Girls and boys who do not qualify for frl fare the best in terms of math and reading scores. There is a noticeable effect of sex on math and reading scores for those who qualify for frl, and warrants a closer look for a significant interaction. Boys who qualify for frl score almost twice as low on math and reading than girls who qualify for frl.
+
 ```{r}
-#code chunk
+table <- df_star%>%
+  group_by(sex, frl)%>%
+  summarise(math_mean=mean(tmathss), math_sd=sd(tmathss), rdg_mean=mean(treadss),
+  rdg_sd=sd(treadss))
+table
 ```
 
 ## Commit 4
