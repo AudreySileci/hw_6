@@ -69,6 +69,8 @@ table
 
 ```{r}
 #code chunk
+ggplot(df_star, aes(totexp, tmathss))+geom_point(color="grey70")+
+  geom_smooth(method="lm",aes(color = frl))+labs(title="Relation between teacher experience and math scores", subtitle="Separate regression lines displayed by free/reduced price lunch status",x="Teacher Experience (years)", y="Total Math Scale Score",color="Lunch status") +scale_color_discrete(labels=c("Free/Reduced Price Meals","Paid Meals")) +theme(legend.position = "bottom")
 ```
 
 \newpage
